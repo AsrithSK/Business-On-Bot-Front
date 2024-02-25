@@ -70,7 +70,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://localhost:3000/auth/register",
+      "https://business-on-bot-backend-virid.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
